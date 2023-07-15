@@ -1,0 +1,14 @@
+{
+  "name": "wasm",
+  "version": "1.0.0",
+  "description": "WASM test",
+  "main": "index.js",
+  "scripts": {
+    "compile:cpp": "em++ ./src/cpp/wasm.cpp -O3 -s SIDE_MODULE=1 -s WASM=1 -std=c++14 -o ./build/memtest.wasm",
+    "compile:ts": "tsc .",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "LRB",
+  "license": "ISC",
+  "devDependencies": {}
+}

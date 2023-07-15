@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "removeComments": true,
+        "stripInternal": true,
+        "outDir": "./build/"
+    },
+    "include": [
+        "./src/ts/*",
+        "./src/ts/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
